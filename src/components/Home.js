@@ -1,0 +1,42 @@
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import { Link } from 'react-router-dom';
+import ButtonAppBar from './Navbar';
+
+const bull = (
+  <Box
+    component="span"
+    sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
+  >
+    •
+  </Box>
+);
+
+export default function BasicCard() {
+  return (
+    
+    <Card sx={{ minWidth: 275 }}>
+      <ButtonAppBar />
+        
+      <CardContent>
+      <CardMedia 
+        component="img"
+        height="485"
+        width="194"
+        image='https://i.ibb.co/jVb30LM/zooHome.jpg'
+        alt="Zoo image" />
+        
+        
+      </CardContent>
+      {/* <CardActions>
+        <Button size="small">Learn More</Button>
+      </CardActions> */}
+    </Card>
+  );
+}
